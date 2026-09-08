@@ -179,7 +179,7 @@ button:nth-child(2):hover {
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 1200px) {
   .protfolio-conatiner {
     flex-direction: column;
     height: auto;
