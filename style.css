@@ -177,3 +177,117 @@ button:nth-child(2):hover {
 .navlist li a.active::after {
   transform: scaleX(1);
 }
+
+
+@media (max-width: 900px) {
+  .protfolio-conatiner {
+    flex-direction: column;
+    height: auto;
+    overflow-x: hidden;
+  }
+
+  .left-container,
+  .right-container {
+    width: 100%;
+    height: auto;
+    min-height: unset;
+  }
+
+  .left-container {
+    flex-direction: column;
+    padding: 8rem 1.5rem 2rem;
+    order: 2;
+  }
+
+  .right-container {
+    order: 1;
+    height: 22rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .design {
+    position: absolute;
+    inset: 0;
+  }
+
+  .design .circle {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .circle:nth-child(1) {
+    width: 18rem;
+  }
+
+  .circle:nth-child(2) {
+    width: 14rem;
+  }
+
+  .icons {
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .content {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .content .details {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+
+  .btn-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  button:nth-child(2) {
+    margin-left: 0;
+  }
+
+  .right-container {
+  position: relative;
+}
+
+.design {
+  position: absolute;
+  inset: 0;
+}
+
+.design .circle {
+  /* change left: 70% to left: 50% */
+  left: 50%;
+}
+
+
+.content h1 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    word-break: break-word;
+  }
+
+  .content .intro {
+    display: block;
+    font-size: 1.1rem;
+  }
+
+  .content .details {
+    font-size: 0.95rem;
+    line-height: 1.6rem;
+    margin: 1rem 0 2rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .content h1 {
+    font-size: 1.7rem;
+  }
+}
